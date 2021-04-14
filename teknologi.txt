@@ -1,0 +1,8 @@
+1. Nodejs
+2. Expressjs
+3. Mongodb
+4. Nextjs
+5. Tailwindcss
+6. Websocket
+7. Socket.io
+8. 

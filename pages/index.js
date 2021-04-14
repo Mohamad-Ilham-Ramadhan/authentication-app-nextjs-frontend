@@ -1,65 +1,44 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/home.module.css";
+import clsx from "clsx";
 
 export default function Home() {
+  console.log(styles);
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main>
+        <h1>Hello there. I'm Ilham</h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, omnis dicta alias quam, qui ipsam consequatur in
+          blanditiis non quibusdam vitae autem recusandae provident distinctio
+          totam numquam minus voluptates. Odio.
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+        <div className="flex-shrink-0">
+          <img src="/chat-logo.svg" alt="chat logo" className="h-12 w-12" />
+        </div>
+        <div>
+          <div className="text-tl font-medium text-black">ChitChat</div>
+          <p className="text-gray-500">You have a new message!</p>
+        </div>
+      </div>
+
+      <button className={clsx(styles.btn, styles["btn-green"])}>Click</button>
+      <br />
+      <button className="bg-green-500 active:bg-green-700">Click me</button>
+
+      <form action="">
+        <input type="text" placeholder="username" className="disabled:bg-red-500 w-[762px] !font-medium" disabled/>
+      </form>
     </div>
-  )
+  );
 }
