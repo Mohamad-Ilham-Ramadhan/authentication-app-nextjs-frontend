@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+@import url('./font.css');
+
+

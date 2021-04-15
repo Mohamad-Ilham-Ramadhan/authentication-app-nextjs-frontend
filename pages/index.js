@@ -13,7 +13,9 @@ export default function Home() {
 
       <main>
         <h1>Hello there. I'm Ilham</h1>
-
+        <br/>
+        <p>The quick brown fox jumps over the lazy dog.</p>
+        <br/>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Necessitatibus, omnis dicta alias quam, qui ipsam consequatur in
