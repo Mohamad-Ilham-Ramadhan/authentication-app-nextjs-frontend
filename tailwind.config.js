@@ -12,6 +12,7 @@ module.exports = {
       gray: {
         ...colors.gray,
         lightest: '#F2F2F2',
+        lighter: '#E0E0E0',
         light: '#BDBDBD',
         DEFAULT: '#828282',
         '2': '#4F4F4F'
@@ -29,6 +30,14 @@ module.exports = {
       zIndex: {
         '1000': '1000', // for backdrop
         '1010': '1010', // for popover
+      },
+      fontSize: {
+        '2xs': ['13px', {
+          lineHeight: '1rem'
+        }]
+      },
+      spacing: {
+        '18': '4.5rem'
       }
     },
   },

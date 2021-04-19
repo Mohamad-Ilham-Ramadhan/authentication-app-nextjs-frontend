@@ -1,6 +1,7 @@
 import styles from "@/styles/register.module.css";
 import clsx from "clsx";
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 import InputIcon from "@/components/inputs/InputIcon";
 import { MailIcon } from "@heroicons/react/solid";
 import { LockClosedIcon } from "@heroicons/react/solid";
@@ -76,10 +77,7 @@ export default function Register() {
             </Link>
           </small>
         </div>
-        <div className="text-gray text-sm flex">
-          <span className="inline-block mr-auto">created by <strong className="underline">Mohamad Ilham Ramadhan</strong></span>
-          <span className="inline-block ml-auto">devChallenges.io</span>
-        </div>
+        <Footer />
       </div>
     </section>
   );
