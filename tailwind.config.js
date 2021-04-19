@@ -10,8 +10,11 @@ module.exports = {
         DEFAULT: '#2F80ED',
       },
       gray: {
+        ...colors.gray,
+        lightest: '#F2F2F2',
         light: '#BDBDBD',
-        DEFAULT: '#828282'
+        DEFAULT: '#828282',
+        '2': '#4F4F4F'
       }, 
       red: {
         DEFAULT: '#EB5757'
@@ -19,10 +22,15 @@ module.exports = {
       white: colors.white,
       green: colors.green,
     },
-    inset: {
+    extend: {
+      inset: {
       '1/2': '50%'
+      },
+      zIndex: {
+        '1000': '1000', // for backdrop
+        '1010': '1010', // for popover
+      }
     },
-    extend: {},
   },
   variants: {
     extend: {

@@ -61,7 +61,7 @@ export default function Register() {
 
           <small className="block text-center text-sm text-gray w-full">
             Don't have an account yet?{" "}
-            <Link href="register">
+            <Link href="/register">
               <a className="text-blue-light">Register</a>
             </Link>
           </small>

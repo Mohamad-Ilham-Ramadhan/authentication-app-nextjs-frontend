@@ -69,7 +69,7 @@ export default function Register() {
 
           <small className="block text-center text-sm text-gray w-full">
             Adready a member?{" "}
-            <Link href="login">
+            <Link href="/login">
               <a className="text-blue-light">
                 Login
               </a>

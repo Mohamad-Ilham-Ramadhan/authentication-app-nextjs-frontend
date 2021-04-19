@@ -1,7 +1,9 @@
 border color = #BDBDBD
 color = #333333
 color gray = #828282
+color gray 2 = #4F4F4F
 color gray lighter = #BDBDBD
+color gray ligthest = #F2F2F2
 blue = #2F80ED
 blue lighter = #2D9CDB
 red = #EB5757
