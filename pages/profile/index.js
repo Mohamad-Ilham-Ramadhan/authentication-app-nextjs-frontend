@@ -14,7 +14,7 @@ export default function Profile() {
   return (
     <section className="container mx-auto pb-20">
 
-      <Header />
+      <Header classNames="mb-14 mt-7"/>
 
       <div className={clsx(styles.wrapper, "mx-auto")}>
         <div className="text-center mb-8">
@@ -31,8 +31,10 @@ export default function Profile() {
               </p>
             </div>
             <div className="flex justify-end items-center">
-              <Link href="/profile/edit" className="border rounded-xl border-gray py-1 px-6 text-gray">
-                Edit
+              <Link href="/profile/edit">
+                <a className="border rounded-xl border-gray py-1 px-6 text-gray">
+                  Edit
+                </a>
               </Link>
             </div>
           </div>

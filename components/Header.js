@@ -31,7 +31,7 @@ export default function Header({classNames}) {
     setShowMenu(false);
   }
   return (
-    <header className={clsx("flex mt-4 mb-8", classNames)}>
+    <header className={clsx("flex", classNames)}>
     <img
       src="/images/devchallenges.svg"
       alt="Logo"
